@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>CBRT Edit & Drag</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="../jquery-ui/js/jquery-1.7.1.min.js"></script>
+	<script src="../ckeditor/_samples/sample.js" type="text/javascript"></script>
+	<link href="../ckeditor/_samples/sample.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+
+        div.cbeditor:hover
+        {
+            border-color: black;
+        }
+
+    </style>
+    <script type="text/javascript">
+        var editor;
+        var toolbar_CB =
+        [
+            { name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
+            { name: 'styles', items : [ 'Font','FontSize'] }
+        ];
+        $(function() {
+            $('#editor1').dblclick(function() {
+                    replaceDiv(this);
+            });
+        })
+
+        function replaceDiv( div )
+        {
+            if ( editor )
+                editor.destroy();
+            editor = CKEDITOR.replace( div,
+                    {   toolbar:toolbar_CB,
+                        uiColor: '#F42E8D',
+                        sharedSpaces :
+                        {
+                            top : 'topSpace',
+                            bottom : 'bottomSpace'
+                        }
+                    }
+            );
+        }
+
+    </script>
+</head>
+<body>
+	<!-- This <div> holds alert messages to be display in the sample page. -->
+	<div id="alerts">
+		<noscript>
+			<p>
+				<strong>Clickbooq requires JavaScript to run</strong>.
+			</p>
+		</noscript>
+	</div>
+    <form action="#">
+        <label for="editor1">
+            Rich Text Editor:</label>
+        <div id="editor1" class="cbeditor">
+            <p>This is some <strong>sample text</strong>. Double click to see the Rich Text editor in action.</p>
+        </div>
+    </form>
+    <div id="topSpace"></div>
+    <div id="bottomSpace" style="display: none;"></div>
+</body>
+</html>
