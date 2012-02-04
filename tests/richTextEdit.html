@@ -9,15 +9,27 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
 	<script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
 	<script type="text/javascript" src="../jquery-ui/js/jquery-1.7.1.min.js"></script>
+    <script src="../jquery-ui/js/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
 	<script src="../ckeditor/_samples/sample.js" type="text/javascript"></script>
 	<link href="../ckeditor/_samples/sample.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
+        #containment-wrapper { width: 800px; height:600px; border:2px solid #ccc; padding: 2px; margin: auto; }
+        div.cbeditor{
+            border: solid 2px; /* Transparent;*/
+            padding: 5px;
+            display: inline-block;
+        }
 
         div.cbeditor:hover
         {
-            border-color: black;
+            border-color: #F42E8D;
         }
 
+/*
+        .cke_editor .cke_contents {
+            width: 800px !important;
+        }
+*/
     </style>
     <script type="text/javascript">
         var editor;
@@ -27,10 +39,12 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
             { name: 'styles', items : [ 'Font','FontSize'] }
         ];
         $(function() {
-            $('#editor1').dblclick(function() {
-                    replaceDiv(this);
-            });
-        })
+            $('#editor1').draggable({ containment: "#containment-wrapper", scroll: false })
+                    .dblclick(function() {
+                        replaceDiv(this);
+                    }
+            );
+        });
 
         function replaceDiv( div )
         {
@@ -38,14 +52,32 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
                 editor.destroy();
             editor = CKEDITOR.replace( div,
                     {   toolbar:toolbar_CB,
+                        toolbarCanCollapse: false,
                         uiColor: '#F42E8D',
                         sharedSpaces :
                         {
                             top : 'topSpace',
                             bottom : 'bottomSpace'
-                        }
+                        },
+                        height: $(div).height()+10,
+                        width: $(div).width()+60,
+                        on: {
+                            blur: function() {
+//                                editor.destroy();
+                            },
+                            instanceReady: function(evt) {
+                                editor.focus();
+                            }
+                        },
+                        enterMode : CKEDITOR.ENTER_BR,
+                        extraPlugins:  'autogrow',
+//                        autoGrow_maxHeight: 0,
+//                        autoGrow_onStartup: true,
+                        autoGrow_minHeight: 0
                     }
             );
+//            editor.focusManager(editor).focus();
+//            editor.on();
         }
 
     </script>
@@ -59,14 +91,12 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 			</p>
 		</noscript>
 	</div>
-    <form action="#">
-        <label for="editor1">
-            Rich Text Editor:</label>
+    <div id="containment-wrapper">
         <div id="editor1" class="cbeditor">
-            <p>This is some <strong>sample text</strong>. Double click to see the Rich Text editor in action.</p>
+            This is some <strong>sample text</strong>. Double click to see the Rich Text editor in action.
         </div>
-    </form>
-    <div id="topSpace"></div>
+    </div>
+    <div id="topSpace" style="width:809px; margin: auto;"></div>
     <div id="bottomSpace" style="display: none;"></div>
 </body>
 </html>
