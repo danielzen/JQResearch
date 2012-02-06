@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/tests/richTextEdit.html" libraries="{jquery}" />
+    <file url="PROJECT" libraries="{jQuery UI-1.8.17, jQuery-1.7.1}" />
+    <excludedPredefinedLibrary name="AJAX" />
+    <excludedPredefinedLibrary name="DHTML" />
+    <excludedPredefinedLibrary name="DOM Core" />
+    <excludedPredefinedLibrary name="DOM Events" />
+    <excludedPredefinedLibrary name="DOM Traversal And Range" />
+    <excludedPredefinedLibrary name="DOM XPath" />
+    <excludedPredefinedLibrary name="EcmaScript L5" />
+    <excludedPredefinedLibrary name="EcmaScript for XML" />
+  </component>
+</project>
+

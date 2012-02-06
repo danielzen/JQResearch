@@ -4,6 +4,9 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jQuery-1.7.1" level="application" />
+    <orderEntry type="library" name="jQuery UI-1.8.17" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
 

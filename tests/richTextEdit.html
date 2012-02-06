@@ -8,15 +8,24 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 	<title>CBRT Edit & Drag</title>
 	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
 	<script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
-	<script type="text/javascript" src="../jquery-ui/js/jquery-1.7.1.min.js"></script>
-    <script src="../jquery-ui/js/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
-	<script src="../ckeditor/_samples/sample.js" type="text/javascript"></script>
-	<link href="../ckeditor/_samples/sample.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.js"></script>
     <style type="text/css">
+        body, input, textarea {
+            color: #333333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            font-size: 75%;
+        }
         #containment-wrapper { width: 800px; height:600px; border:2px solid #ccc; padding: 2px; margin: auto; }
-        div.cbeditor{
+        div.cbeditor {
             border: solid 2px; /* Transparent;*/
             padding: 5px;
+            display: inline-block;
+        }
+        div.moveable {
+            border: solid 2px; /* Transparent;*/
             display: inline-block;
         }
 
@@ -37,10 +46,11 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
         [
             { name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
             { name: 'styles', items : [ 'Font','FontSize'] }
+//            { name: 'links', items : [ 'Link','Unlink','Anchor' ] }
         ];
         $(function() {
-            $('#editor1').draggable({ containment: "#containment-wrapper", scroll: false })
-                    .dblclick(function() {
+            $('#moveable1').draggable({ containment: "#containment-wrapper", scroll: false });
+            $('#editor1').dblclick(function () {
                         replaceDiv(this);
                     }
             );
@@ -66,6 +76,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
                                 editor.destroy();
                             },
                             instanceReady: function(evt) {
+                                $('#bottomSpace').hide();
                                 editor.focus();
                             }
                         },
@@ -92,11 +103,13 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 		</noscript>
 	</div>
     <div id="containment-wrapper">
-        <div id="editor1" class="cbeditor">
-            This is some <strong>sample text</strong>. Double click to see the Rich Text editor in action.
+        <div id="moveable1" class="moveable">
+            <div id="editor1" class="cbeditor" style="">
+                This is some <strong>sample text</strong>. Click to see the Rich Text editor in action.
+            </div>
+            <div id="bottomSpace" style="display: inline;"></div>
+            <div id="topSpace" style="display: inline;"></div>
         </div>
     </div>
-    <div id="topSpace" style="width:809px; margin: auto;"></div>
-    <div id="bottomSpace" style="display: none;"></div>
 </body>
 </html>
