@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Layout</title>
+    <link rel="stylesheet" href="../jquery-ui/development-bundle/themes/cb-theme/jquery.ui.all.css">
+    <style type="text/css">
+        .portfolio { width: 100%; border: 1px solid #ccc; }
+        .ui-sortable-helper { border: 2px solid #F42E8D; }
+        /*.ui-sortable-placeholder { width: 100px; height: 90px; border: 2px solid #666; display: inline-block; }*/
+        /*overflow: auto; height: 200px; }*/
+        article { width: 120px; height: 90px; border: 1px solid #666;
+                  display: inline-block; margin: 4px; }
+        .placeholder { vertical-align: bottom; /* Layout was screwed up without this -zen */
+            visibility: hidden;}
+    </style>
+    <script src="../js/jquery-1.7.1.min.js"></script>
+    <script src="../js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script>
+        $(function () {
+//            $( "#portfolio" ).resizable();
+            $("#sortable").sortable({
+                opacity:0.6,
+//                items:'article',
+                containment:'parent',
+                placeholder:'placeholder',
+                start:function (e, ui) { ui.placeholder.style=('vertical-align: bottom;')}
+            }).disableSelection();
+        });
+    </script>
+
+</head>
+<body>
+   <section id="title">
+      <span> > </span> Fashion Portraits (15)
+   </section>
+   <section class="portfolio" id="sortable">
+       <article>1</article><article>2</article><article>3</article><article>4</article><article>5</article><article>6</article><article>7</article><article>8</article><article>9</article><article>10</article><article>11</article><article>12</article><article>13</article><article>14</article><article>15</article>
+   </section>
+</body>
+</html>
