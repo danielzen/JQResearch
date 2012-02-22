@@ -10,3 +10,8 @@ var hidePictureMenu = function (item) {
   jqItem.find('.pink-fade').remove();
   jqItem.find('.picture-menu').remove();
 };
+
+var fadeSelected = function () {
+  var fade = $("<div class='pink-fade' />").css({ opacity:0.4});
+  $(':selected').append(fade);
+};

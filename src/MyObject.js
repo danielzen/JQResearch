@@ -11,7 +11,7 @@ var _class = function (cls) {
   classObj.fn.init.prototype = classObj.fn;
   return classObj;
 
-  //  Can I create a revealing pattern with this? Hide fn?
+  // TODO: Can I create a revealing pattern with this? Hide fn?
 };
 
 var MyObject = _class({
