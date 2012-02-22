@@ -1,7 +1,6 @@
-
 <html>
 <head>
-    <title>Rearrange</title>
+    <title>3dub drag</title>
     <link rel="stylesheet" href="../jquery-ui/development-bundle/themes/cb-theme/jquery.ui.all.css">
     <style>
         body { font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
@@ -14,9 +13,9 @@
         .portfolio div.picture-menu {position: absolute; right: 1px; top: -1px;}
         .portfolio div.picture-menu img {position: relative;}
     </style>
-    <script src="../js/jquery-1.7.1.min.js"></script>
+    <script src="../js/jquery-1.7.1.js"></script>
     <!--<script src="../js/jquery-ui-1.8.17.custom.min.js"></script>-->
-    <script src="../js/jquery.event.drag.js"></script>
+    <script src="../js/jquery.event.drag-2.0.js"></script>
     <!--<script src="../js/modernizr-2.5.2.js"></script>-->
     <script src="../src/pictureMenu.js" type="text/javascript"></script>
     <script>
@@ -36,18 +35,21 @@
               .css("opacity", 0.5)
               .css("position", "absolute")
               .appendTo('ul.portfolio');
-          });
+          })
+          .drag(function( ev, dd ){
+            $( dd.proxy ).css({
+              top: dd.offsetY,
+              left: dd.offsetX
+            });
+          })
+          .drag("end",function( ev, dd ){
+            $( dd.proxy ).remove();
+          })
 //          .click(function() { $(this).toggleClass("selected")})
 //          .drag("init",function(){
 //            if ( $( this ).is('.selected') )
 //              return $('.selected');
 //          })
-//          .drag(function( ev, dd ){
-//            $( this ).css({
-//              top: dd.offsetY,
-//              left: dd.offsetX
-//            });
-//          });
       });
 
     </script>
