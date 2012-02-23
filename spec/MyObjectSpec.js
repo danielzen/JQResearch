@@ -6,7 +6,7 @@ describe("MyObject", function () {
     });
     it("changes state", function () {
         obj.setState("dirty");
-        console.log(obj);
+//        console.log(obj);
         expect(obj.getState()).toEqual("dirty");
     })
     it("adds states", function () {

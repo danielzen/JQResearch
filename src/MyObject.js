@@ -3,8 +3,12 @@
 // Modeled after jquery definition. Still searching for my ideal object definition pattern
 
 var _class = function (cls) {
-  var classObj = function (args) {
-    return new classObj.fn.init(args);
+  var classObj = function () {
+    var args = arguments.length > 0 ? "arguments[0]" : "";
+    for (var i = 1; i < arguments.length; i++) {
+      args += ", arguments[" + i + "]";
+    }
+    return eval("new classObj.fn.init(" + args + ")");
   };
 
   classObj.fn = classObj.prototype = cls;
@@ -15,7 +19,6 @@ var _class = function (cls) {
 };
 
 var MyObject = _class({
-//  constructor:this,
   init:function (state) {
     this.setState(state);
     return this;
