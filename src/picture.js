@@ -54,3 +54,7 @@ var fadePicture = function (item) {
 var darkenPicture = function (item) {
   $(item).children("img").css("opacity", 1);
 }
+
+var selectPicture = function (item) {
+  $(item).children("img").attr("selected", "selected");
+}

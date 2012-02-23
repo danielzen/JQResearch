@@ -30,7 +30,7 @@ describe("appendPicturesToPortfolio", function () {
   })
 })
 
-describe("Picture Menu", function () {
+describe("Picture", function () {
   var selected, picMenu, portfolio, picLi;
   describe("show Picture menu", function () {
     portfolio = $('<div/>');
@@ -39,7 +39,7 @@ describe("Picture Menu", function () {
     selected = portfolio.find('.selected');
     picMenu = portfolio.find('.picture-menu');
 
-    it("should make picture-menu & selected divs visibility: visible", function () {
+    it("showPictureMenu should make picture-menu & selected divs visibility: visible", function () {
       expect(selected.length).toBe(1);
       expect(picMenu.length).toBe(1);
       expect(picMenu.children().length).toBe(2);
@@ -89,5 +89,10 @@ describe("Picture Menu", function () {
     });
   });
 
-
+  describe("selectPicture", function () {
+    it("should be set to selected", function () {
+      selectPicture(picLi);
+      expect(picLi.children("img").attr("selected")).toBe("selected");
+    })
+  })
 });
