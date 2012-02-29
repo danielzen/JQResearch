@@ -1,0 +1,53 @@
+Attribute Widget:
+ng:repeat
+ 
+Directives:
+ng:init
+ng:bind
+
+ng:app
+ng:model
+ng:controller
+ng:repeat
+ng:include
+ng:click
+
+$watch
+$apply
+$digest
+$rootScope
+$new
+$http
+$defer 
+$destroy
+
+directives
+controllers
+scope
+widgets
+
+<div ng:init="u='http://zzz.net/photo.jpg'; n='zen'">
+  <cb:picture url="u" name="n"></cb:picture>
+</div>  
+
+angular.widget('cb:picture', function(compileElement){
+  var compiler = this;
+  compileElement.css('display', 'block');
+  var urlExp = compileElement.attr('url');
+  var nameExp = compileElement.attr('name');
+  return function(linkElement){
+    var salutationSpan = angular.element('<span class="salutation"></span');
+    var nameSpan = angular.element('<span class="name"></span>');
+    linkElement.append(salutationSpan);
+    linkElement.append(' ');
+    linkElement.append(nameSpan);
+    linkElement.append('!');
+    this.$watch(salutationExp, function(value){
+      salutationSpan.text(value);
+     });
+    this.$watch(nameExp, function(value){
+    nameSpan.text(value);
+    });
+  };
+});
+

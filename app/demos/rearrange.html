@@ -1,0 +1,72 @@
+
+<html>
+<head>
+    <title>Rearrange</title>
+    <link rel="stylesheet" href="../app/lib/jquery-ui/development-bundle/themes/cb-theme/jquery.ui.all.css">
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
+        .portfolio { list-style-type: none; margin: 0; padding: 0; }
+        .portfolio li.pic {position: relative; background: #d0056b; margin: 6px; padding: 0; float: left; width: 110px; height: 83px; font-size: 1em; text-align: right; }
+        .portfolio li.vertical {position: relative; background: #d0056b; margin-top: 6px; padding: 0; border: 0; float: left; width: 1px; height: 85px; }
+        .portfolio li span { position: absolute; bottom: 0; right:3px; z-index: 1;}
+        .portfolio li img {position: absolute; top: 1px; left: 1px; z-index: 0;}
+        .portfolio div.pink-fade {position: absolute; bottom: 0; right:0; left: 0; background-color:#d0056b; display: block; width: 110px; height: 83px;}
+        .portfolio div.picture-menu {position: absolute; right: 1px; top: -1px;}
+        .portfolio div.picture-menu img {position: relative;}
+    </style>
+    <script src="../js/jquery-1.7.1.min.js"></script>
+    <script src="../js/jquery-ui-1.8.17.custom.min.js"></script>
+    <!--<script src="../js/modernizr-2.5.2.js"></script>-->
+    <script src="../src/pictureMenu.js" type="text/javascript"></script>
+    <script>
+        $(function() {
+            $(".portfolio li.pic").addClass("ui-state-default");  // Easier than putting it in the HTML :) -zen
+            $(".portfolio li.pic").draggable({ helper: 'clone', opacity: 0.6, zIndex: 10 });
+            $( ".portfolio" ).disableSelection();
+            $(".portfolio li.pic").mouseenter(function () { showPictureMenu(this); });
+            $(".portfolio li.pic").mouseleave(function () { hidePictureMenu(); });
+        });
+        var oldItem=null;
+
+    </script>
+</head>
+<body>
+<div id="title">
+    <span> > </span> <strong>Fashion Portraits (12)</strong>
+</div>
+<ul class="portfolio">
+    <li class='vertical'></li>
+    <li class='pic'>
+        <img src="../img/Chrysanthemum.jpg" alt="Chrysanthemum"/>
+        <span>1</span>
+    </li>
+    <li class='vertical'></li>
+    <li class='pic'>
+        <span>2</span>
+        <img src="../img/Desert.jpg" alt="Desert"/>
+    </li>
+    <li class='vertical'></li>
+    <li class='pic'><span>3</span><img src="../img/Hydrangeas.jpg" alt="Hydrangeas"/></li>
+    <li class='vertical'></li>
+    <li class='pic'><span>4</span><img src="../img/Jellyfish.jpg" alt="Jellyfish"/></li>
+    <li class='vertical'></li>
+    <li class='pic'><span>5</span><img src="../img/Koala.jpg" alt="Koala"/></li>
+    <li class='vertical'></li>
+    <li class='pic'><span>6</span><img src="../img/Lighthouse.jpg" alt="Lighthouse"/></li>
+    <li class='vertical'></li>
+    <li class='pic'><span>7</span><img src="../img/Penguins.jpg" alt="Penguins"/></li>
+    <li class='vertical'></li>
+    <li class='pic'><span>8</span><img src="../img/Tulips.jpg" alt="Tulips"/></li>
+    <li class='vertical'></li>
+    <li class='pic'><span>9</span></li>
+    <li class='vertical'></li>
+    <li class='pic'><span>10</span></li>
+    <li class='vertical'></li>
+    <li class='pic'><span>11</span></li>
+    <li class='vertical'></li>
+    <li class='pic' style="background: #0F0">
+        <span>12</span>
+    </li>
+</ul>
+</body>
+</html>
