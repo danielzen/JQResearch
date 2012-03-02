@@ -4,10 +4,16 @@ var pic = new Picture(theUrl, theName); // sets initial state
 
 describe("Picture", function () {
     it("should have name", function () {
-      expect(pic.getName()).toBe(theName);
+      expect(pic.name).toBe(theName);
     })
     it("should have url", function () {
-      expect(pic.getUrl()).toBe(theUrl)
+      expect(pic.url).toBe(theUrl)
+    })
+    it("should not be selected", function () {
+      expect(pic.selected).toBe(false);
+    })
+    it("should not have mouse over", function () {
+      expect(pic.over).toBe(false);
     })
 });
 
@@ -19,7 +25,7 @@ describe("appendPicturesToPortfolio", function () {
   var expected = html("<li class='vertical'></li>"+
     "<li class='pic'>"+ "<img src='http://zzz.net/photo.jpg' alt='zen'>" + "<span>1</span>" +
     "<div class='selected'/>" +
-    "<div class='picture-menu'><img src='../app/img/settings.gif' alt='?'><img src='../app/img/delete.gif' alt='x'>" + "</div>" +
+    "<div class='picture-menu'><img src='../img/settings.gif' alt='?'><img src='../img/delete.gif' alt='x'>" + "</div>" +
     "</li>"+ "<li class='vertical'></li>").replace(/\s+/g,' ');
   it("should take an array of Pictures and append to portfolio element", function () {
     var portfolio = $("<div/>");
@@ -35,17 +41,16 @@ describe("appendPicturesToPortfolio", function () {
     expect(portfolioHTML.length).toEqual(expected.length);
     expect(portfolioHTML).toEqual(expected);
   })
-})
+});
+
+var selected, picMenu, portfolio, picLi;
+portfolio = $('<div/>');
+appendPicturesToPortfolio([pic], portfolio);
+selected = portfolio.find('.selected');
+picMenu = portfolio.find('.picture-menu');
+picLi = portfolio.find('.pic');
 
 describe("showPictureMenu", function () {
-  var selected, picMenu, portfolio, picLi;
-  describe("show Picture menu", function () {
-    portfolio = $('<div/>');
-    appendPicturesToPortfolio([pic], portfolio);
-    picLi = portfolio.find('.pic');
-    selected = portfolio.find('.selected');
-    picMenu = portfolio.find('.picture-menu');
-
     it("should make picture-menu & selected divs visibility: visible", function () {
       expect(selected.length).toBe(1);
       expect(picMenu.length).toBe(1);
@@ -62,47 +67,46 @@ describe("showPictureMenu", function () {
       expect(picMenu.css("visibility")).toBe("visible");
     });
 
-  });
+});
 
-  describe("hide Picture menu", function () {
-    it("should visibility: hidden the picture-menu", function () {
-      showPictureMenu(picLi);
-      hidePictureMenu(picLi);
-      expect(picMenu.css("visibility")).toBe("hidden");
-    });
-    it("hidePictureMenu should work even if not a jQuery object", function () {
-      showPictureMenu(picLi);
-      hidePictureMenu(picLi[0]);
-      expect(picMenu.css("visibility")).toBe("hidden");
-    });
+describe("hide Picture menu", function () {
+  it("should visibility: hidden the picture-menu", function () {
+    showPictureMenu(picLi);
+    hidePictureMenu(picLi);
+    expect(picMenu.css("visibility")).toBe("hidden");
   });
-
-  describe("hideSelected", function () {
-    it("should visibility: hidden the selected", function () {
-      showPictureMenu(picLi);
-      hideSelected(picLi);
-      expect(selected.css("visibility")).toBe("hidden");
-    });
+  it("hidePictureMenu should work even if not a jQuery object", function () {
+    showPictureMenu(picLi);
+    hidePictureMenu(picLi[0]);
+    expect(picMenu.css("visibility")).toBe("hidden");
   });
+});
 
-  describe("fadePicture", function () {
-    it("should set opacity: .6", function () {
-      fadePicture(picLi);
-      expect(picLi.children("img").css("opacity")).toEqual("0.6");
-    });
+describe("hideSelected", function () {
+  it("should visibility: hidden the selected", function () {
+    showPictureMenu(picLi);
+    hideSelected(picLi);
+    expect(selected.css("visibility")).toBe("hidden");
   });
+});
 
-  describe("darkenPicture", function () {
-    it("should set opacity: 1", function () {
-      darkenPicture(picLi);
-      expect(picLi.children("img").css("opacity")).toEqual("1");
-    });
+describe("fadePicture", function () {
+  it("should set opacity: .6", function () {
+    fadePicture(picLi);
+    expect(picLi.children("img").css("opacity")).toEqual("0.6");
   });
+});
 
-  describe("selectPicture", function () {
-    it("should be set to selected", function () {
-      selectPicture(picLi);
-      expect(picLi.children("img").attr("selected")).toBe("selected");
-    })
+describe("darkenPicture", function () {
+  it("should set opacity: 1", function () {
+    darkenPicture(picLi);
+    expect(picLi.children("img").css("opacity")).toEqual("1");
+  });
+});
+
+describe("selectPicture", function () {
+  it("should be set to selected", function () {
+    selectPicture(picLi);
+    expect(picLi.children("img").attr("selected")).toBe("selected");
   })
 });

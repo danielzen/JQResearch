@@ -8,10 +8,9 @@ load:
   - ../test/lib/angular/angular-mocks.js
 
   - ../app/src/*.js
-  - ../test/spec/*.js
 
-  - ../app/js/*.js
-  - ../test/unit/*.js
+  - ../app/js/widgets.js
+  - ../test/unit/widgetsSpec.js
 
 exclude:
 

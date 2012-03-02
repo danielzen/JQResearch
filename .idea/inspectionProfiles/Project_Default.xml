@@ -6,6 +6,21 @@
     <inspection_tool class="CucumberMissedExamples" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="CucumberTableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="CucumberUndefinedStep" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="5">
+            <item index="0" class="java.lang.String" itemvalue="ng:controller" />
+            <item index="1" class="java.lang.String" itemvalue="ng:repeat" />
+            <item index="2" class="java.lang.String" itemvalue="ng:app" />
+            <item index="3" class="java.lang.String" itemvalue="cb:picture" />
+            <item index="4" class="java.lang.String" itemvalue="ng:click" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
     <inspection_tool class="QUnitAdapterSupport" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="ThreeNegationsPerFunctionJS" enabled="true" level="WARNING" enabled_by_default="true" />
   </profile>
 </component>

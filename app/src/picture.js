@@ -1,17 +1,13 @@
 var Picture = _class({
 //  constructor:this,
   init:function (url, name) {
-    this._url = url;
-    this._name = name;
+    this.url = url;
+    this.name = name;
+    this.selected = false;
+    this.over = false;
     return this;
-  },
-  getUrl:function () {
-    return this._url;
-  },
-  getName:function () {
-    return this._name;
   }
-})
+});
 
 var appendPicturesToPortfolio = function(pictures, portfolio) {
   var vertical = "<li class='vertical'/>";
@@ -21,12 +17,12 @@ var appendPicturesToPortfolio = function(pictures, portfolio) {
   for (var i = 0; i < length; i++) {
     var pic = pictures[i];
     var liPic = $("<li class='pic'/>");
-    liPic.append("<img src='"+pic.getUrl()+"' alt='"+pic.getName()+"'>");
+    liPic.append("<img src='" + pic.url + "' alt='" + pic.name + "'>");
     liPic.append("<span>"+ (i+1) +"</span>");
     liPic.append($("<div class='selected'/>"));
     var picMenu = $("<div class='picture-menu'>");
-    picMenu.append("<img src='../app/img/settings.gif' alt='?'>");
-    picMenu.append("<img src='../app/img/delete.gif' alt='x'>");
+    picMenu.append("<img src='../img/settings.gif' alt='?'>");
+    picMenu.append("<img src='../img/delete.gif' alt='x'>");
     liPic.append(picMenu);
     portfolio.append(liPic);
     portfolio.append(vertical);

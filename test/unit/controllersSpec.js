@@ -1,31 +1,21 @@
 /* jasmine specs for controllers go here */
-(function() {
-  describe('MyCtrl1', function(){
-    var myCtrl1;
+describe('PicturePortfolioCtrl', function () {
+  var ctrl;
+  beforeEach(function () {
+    ctrl = new PicturePortfolioCtrl();
+  });
 
-    beforeEach(function(){
-      myCtrl1 = new MyCtrl1();
+  describe('Pictures', function () {
+    it('should create "pictures" model with 8 inside', function () {
+      expect(ctrl.pictures.length).toBe(8);
     });
-
-
-    it('should ....', function() {
-      //spec body
+    it('should contain Pictures with name and url', function () {
+      var picture = ctrl.pictures[0];
+      expect(picture instanceof Picture).toBe(true);
+      expect(picture.url).toBeDefined();
+      expect(picture.name).toBeDefined();
     });
   });
-})();
 
-(function() {
-describe('MyCtrl2', function(){
-  var myCtrl2;
-
-
-  beforeEach(function(){
-    myCtrl2 = new MyCtrl2();
-  });
-
-
-  it('should ....', function() {
-    //spec body
-  });
 });
-})();
+
