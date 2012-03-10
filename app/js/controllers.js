@@ -1,6 +1,6 @@
 /* App Controllers */
-function PicturePortfolioCtrl() {
-  this.pictures = [
+function PicturePortfolioCtrl($scope, jQueryUI) {
+  $scope.pictures = [
     new Picture("../img/Chrysanthemum.jpg","Chrysanthemum"),
     new Picture("../img/Desert.jpg","Desert"),
     new Picture("../img/Hydrangeas.jpg","Hydrangeas"),
@@ -10,16 +10,5 @@ function PicturePortfolioCtrl() {
     new Picture("../img/Penguins.jpg","Penguins"),
     new Picture("../img/Tulips.jpg","Tulips")
   ];
-  this.picture=this.pictures[0];
-
-
+//  $scope.picture=$scope.pictures[0];
 }
-
-
-//function MyCtrl1() {}
-//MyCtrl1.$inject = [];
-//
-//
-//function MyCtrl2() {
-//}
-//MyCtrl2.$inject = [];

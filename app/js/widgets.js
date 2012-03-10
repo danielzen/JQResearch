@@ -1,27 +1,57 @@
-/* http://docs.angularjs.org/#!angular.widget */
+var cbModule = angular.module("clickbooq", []);
 
-angular.widget('@cb:picture', function (picExp, compileElement) {
+cbModule.directive('cbPicture', function ($compile) {
 //  compileElement.css('display', 'block');
-  return function (linkElement) {
-    var self = this;
-    function update() {
-      var pic = self.$eval(picExp);
-      var image = angular.element('<img src="' + pic.url + '" alt="' + pic.name + '">');
-      var position = angular.element('<span>' + (self.$index + 1) + '</span>');
-      var selectedVisibility = (pic.selected | pic.over) ? "visible" : "hidden";
-      var picMenuVisibility = pic.over ? "visible" : "hidden";
-      var selected = angular.element('<div class="selected" style="visibility: '+selectedVisibility+'; "></div>');
-      var picMenu = angular.element('<div class="picture-menu" style="visibility: '+picMenuVisibility+'; "><img src="../img/settings.gif" alt="?"><img src="../img/delete.gif" alt="x"></div>');
-      linkElement.append(image);
-      linkElement.append(position);
-      linkElement.append(selected);
-      linkElement.append(picMenu);
+  return {replace:true,
+    transclude:true,
+    scope:{
+      cbPicture:'accessor',
+      position: 'evaluate'
+    },
+    template:'<li>' +
+      '<img src="{{cbPicture().url}}" alt="{{cbPicture().name}}">' +
+      '<span>{{position}}</span>' +
+      '<div class="selected" style="visibility: {{selectedVisibility()}};"></div>' +
+      '<div class="picture-menu" style="visibility: {{picMenuVisibility()}};">' +
+      '<img src="../img/settings.gif" alt="?">' +
+      '<img src="../img/delete.gif" alt="x">' +
+      '</div>' +
+      '</li>',
+    link: function(scope, element, attrs) {
+      scope.selectedVisibility = function() {
+        return (scope.cbPicture().selected | scope.cbPicture().over) ? "visible" : "hidden";
+      };
+      scope.picMenuVisibility = function() {
+        return scope.cbPicture().over ? "visible" : "hidden";
+      };
+//
+//      scope.over = function() {
+//        return scope.cbPicture().over ? 'O' : 'o';
+//      };
     }
+  }
+});
 
-    update();
-//    self.$watch(picExp, function (scope, newValue, oldValue) {
-//      console.log(newValue);
-//    });
+//http://jsfiddle.net/zdam/vGjXH/
+cbModule.factory('jqueryUI', function ($window, $templateCache, $document, $compile) {
+  return {
+    wrapper: function (cssSelector, pluginName, options, templateName, dialogScope) {
+      if (templateName) {
+        var templateDom = $($templateCache.get(templateName));
+        $document.append(templateDom);
+        $compile(templateDom)(dialogScope);
+      }
+      $(cssSelector)[pluginName](options);
+    },
+
+    performAction: function(cssSelector, pluginName, action, options) {
+      if(options){
+        $(cssSelector)[pluginName](action, options);
+      }else {
+        $(cssSelector)[pluginName](action);
+      }
+
+    }
   };
 });
 

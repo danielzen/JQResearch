@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Jasmine Spec Runner</title>
+
+  <link rel="shortcut icon" type="image/png" href="test/lib/jasmine/jasmine_favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="http://tryjasmine.com/js/vendor/jasmine-1.1.0/jasmine.css">
+  <!--<link rel="stylesheet" type="text/css" href="https://raw.github.com/pivotal/jasmine/30431a3958df3a9ecad99aec152e155349d9121c/lib/jasmine-core/jasmine.css">-->
+  <script type="text/javascript" src="test/lib/jasmine/jasmine.js"></script>
+  <script type="text/javascript" src="test/lib/jasmine/jasmine-html.js"></script>
+
+  <script type="text/javascript" src="app/lib/angular/angular.js"></script>
+  <script type="text/javascript" src="test/lib/angular/angular-mocks.js"></script>
+
+  <!-- include source files here... -->
+  <script type="text/javascript" src="app/js/myState.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="test/unit/myStateSpec.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var trivialReporter = new jasmine.TrivialReporter();
+
+      jasmineEnv.addReporter(trivialReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return trivialReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>

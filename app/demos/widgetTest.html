@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>WidgetTest</title>
+  <script src="../lib/angular/angular.js"></script>
+  <script src="../js/widgets.js"></script>
+</head>
+<body>
+<div ng:app="myModule">
+  <div ng:controller="StateCtrl">
+    <ul>
+      <li ng:click="myState.selected=!myState.selected" ng:mouseenter="myState.over=true" ng:mouseleave="myState.over=false">
+        <my:state state="myState"></my:state>
+      </li>
+    </ul>
+    <hr/>
+    Debug: {{myState}}
+  </div>
+</div>
+</body>
+</html>

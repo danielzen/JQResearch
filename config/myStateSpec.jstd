@@ -10,7 +10,7 @@ load:
 - ../app/src/*.js
 - ../app/js/*.js
 
-- ../test/unit/widgetsSpec.js
+- ../test/unit/myStateSpec.js
 
 exclude:
 

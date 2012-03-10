@@ -1,5 +1,5 @@
 /**
- * @license AngularJS v0.10.6
+ * @license AngularJS v0.10.7-64912069
  * (c) 2010-2012 AngularJS http://angularjs.org
  * License: MIT
  */
@@ -59,7 +59,8 @@ function setupModuleLoader(window) {
      * var injector = angular.injector(['ng', 'MyModule'])
      * </pre>
      *
-     * However it's more likely that you'll just use {@link angular.directive.ng:app ng:app} or
+     * However it's more likely that you'll just use
+     * {@link angular.module.ng.$compileProvider.directive.ng:app ng:app} or
      * {@link angular.bootstrap} to simplify this process for you.
      *
      * @param {!string} name The name of the module to create or retrieve.
@@ -147,14 +148,38 @@ function setupModuleLoader(window) {
 
           /**
            * @ngdoc method
+           * @name angular.Module#constant
+           * @methodOf angular.Module
+           * @param {string} name constant name
+           * @param {*} object Constant value.
+           * @description
+           * Because the constant are fixed, they get applied before other provide methods.
+           * See {@link angular.module.AUTO.$provide#constant $provide.constant()}.
+           */
+          constant: invokeLater('$provide', 'constant', 'unshift'),
+
+          /**
+           * @ngdoc method
            * @name angular.Module#filter
            * @methodOf angular.Module
-           * @param {string} name filterr name
+           * @param {string} name filter name
            * @param {Function} filterFactory Factory function for creating new instance of filter.
            * @description
            * See {@link angular.module.ng.$filterProvider#register $filterProvider.register()}.
            */
           filter: invokeLater('$filterProvider', 'register'),
+
+          /**
+           * @ngdoc method
+           * @name angular.Module#directive
+           * @methodOf angular.Module
+           * @param {string} name directive name
+           * @param {Function} directiveFactory Factory function for creating new instance of
+           * directives.
+           * @description
+           * See {@link angular.module.ng.$compileProvider.directive $compileProvider.directive()}.
+           */
+          directive: invokeLater('$compileProvider', 'directive'),
 
           /**
            * @ngdoc method
@@ -192,11 +217,12 @@ function setupModuleLoader(window) {
         /**
          * @param {string} provider
          * @param {string} method
+         * @param {String=} insertMethod
          * @returns {angular.Module}
          */
-        function invokeLater(provider, method) {
+        function invokeLater(provider, method, insertMethod) {
           return function() {
-            invokeQueue.push([provider, method, arguments]);
+            invokeQueue[insertMethod || 'push']([provider, method, arguments]);
             return moduleInstance;
           }
         }
