@@ -1,5 +1,15 @@
-/* App Controllers */
-function PicturePortfolioCtrl($scope, jQueryUI) {
+var Picture = _class({
+//  constructor:this,
+  init:function (url, name) {
+    this.url = url;
+    this.name = name;
+    this.selected = false;
+    this.over = false;
+    return this;
+  }
+});
+
+function PicturePortfolioCtrl($scope, jqueryUI) {
   $scope.pictures = [
     new Picture("../img/Chrysanthemum.jpg","Chrysanthemum"),
     new Picture("../img/Desert.jpg","Desert"),
@@ -10,5 +20,12 @@ function PicturePortfolioCtrl($scope, jQueryUI) {
     new Picture("../img/Penguins.jpg","Penguins"),
     new Picture("../img/Tulips.jpg","Tulips")
   ];
+
+  $scope.select = function (pic) {
+    pic.selected=!pic.selected;
+  }
+
+  selected = new Object();
 //  $scope.picture=$scope.pictures[0];
+
 }

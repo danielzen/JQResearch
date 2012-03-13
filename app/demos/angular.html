@@ -8,19 +8,21 @@
     body { font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
     .portfolio { list-style-type: none; margin: 0; padding: 0; }
     .portfolio li.pic {position: relative; margin: 6px; float: left; width: 108px; height: 81px; font-size: 1em; text-align: right; }
-    .portfolio li.vertical {visibility: hidden; position: relative; background: #d0056b; margin-top: 6px; padding: 0; border: 0;
-      float: left; width: 1px; height: 85px; }
+    .portfolio li.between {position: relative; float: left; width: 6px; }
+    .portfolio li.between div.vertical {visibility: hidden; height: 81px; width: 3px; ;background: #d0056b; margin: 0px auto; margin-top: 6px; padding: 0; border: 0;}
     .portfolio li span { position: absolute; bottom: 2px; right:4px; z-index: 1; color: #f5f5f5;}
     .portfolio li img {position: absolute; top: 0; left: 0; z-index: 0; }
-    .portfolio div.selected {visibility: hidden; position: absolute; top: -3px; left: -3px; background-color:#d0056b;
-      width: 114px; height: 87px; z-index: -1}
+    .portfolio div.selected {visibility: hidden; position: absolute; top: -3px; left: -4px; background-color:#d0056b;
+      width: 115px; height: 87px; z-index: -1; margin: 0px auto;}
     .portfolio div.picture-menu {visibility: hidden; position: absolute; right: 0; top: 0;}
     .portfolio div.picture-menu img {position: relative;}
+    .portfolio div.drag-num {text-align: center; border-radius: 15px; font-weight: bolder; padding: 6px; left: 54px; top: 36px; z-index: 2; position: absolute; background: #d0056b;}
   </style>
   <script src="../lib/jquery/jquery.js"></script>
   <script src="../lib/angular/angular.js"></script>
   <script src="../src/MyObject.js" type="text/javascript"></script>
-  <script src="../src/picture.js" type="text/javascript"></script>
+  <!--<script src="../src/picture.js" type="text/javascript"></script>-->
+  <script src="../js/services.js"></script>
   <script src="../js/controllers.js"></script>
   <script src="../js/widgets.js"></script>
   <!--<script src="../js/directives.js"></script>-->
@@ -28,27 +30,7 @@
   <!--<script src="../js/outerHTML-2.1.0-min.js" type="text/javascript"></script>-->
   <!--<script src="../js/jquery-ui-1.8.17.custom.min.js"></script>-->
   <!--<script src="../js/modernizr-2.5.2.js"></script>-->
-  <script>
-      $(function () {
-      $(".portfolio li.pic")
-        .drag("start", function () {
-          return $(this).clone()
-            .css("opacity", 0.5)
-            .css("position", "absolute")
-            .appendTo('ul.portfolio');
-        })
-        .drag(function( ev, dd ){
-          $( dd.proxy ).css({
-            top: dd.offsetY,
-            left: dd.offsetX
-          });
-        })
-        .drag("end",function( ev, dd ){
-          $( dd.proxy ).remove();
-        })
-    });
 
-  </script>
 </head>
 <body>
 <div id="title">
@@ -56,10 +38,12 @@
 </div>
 <div ng:app="clickbooq">
 <ul class="portfolio" ng:controller="PicturePortfolioCtrl">
-  <li class='vertical'></li>
-  <span ng:repeat="pic in pictures" ng:click="pic.selected=!pic.selected" ng:mouseover="pic.over=true" ng:mouseout="pic.over=false">
-    <li cb:picture='pic' position="$index+1" class='pic'></li>
-    <li class='vertical'></li>
+  <li cb:between></li>
+  <span ng:repeat="pic in pictures" >
+    <span ng:mouseover="pic.over=true" ng:mouseout="pic.over=false" ng:click="select(pic)">
+      <li cb:picture='pic' pictures='pictures' position="$index+1" class='pic'></li>
+    </span>
+    <li cb:between></li>
   </span>
 </ul>
 </div>
