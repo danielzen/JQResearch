@@ -21,3 +21,5 @@ cbModule.factory('jqueryUI', function ($window, $templateCache, $document, $comp
     }
   };
 });
+
+//http://jsfiddle.net/zdam/vGjXH/

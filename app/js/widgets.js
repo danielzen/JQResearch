@@ -1,15 +1,20 @@
 cbModule.directive('cbBetween', function ($compile) {
-  return {replace:true,
+  return {
+    replace:true,
     transclude:true,
-    template: '<li class="between"><div class="vertical"></div></li>',
+    template: '<li class="between"><div></div></li>',
   link: function(scope, element, attrs){
+    var newIndex = (typeof scope.$index === "undefined") ? 0 : scope.$index+1 ;
+    scope.drop = function () {
+      scope.pictures.sortPictures(scope.pictures.getSelected(), newIndex);
+      scope.$apply();
+    };
     $(element)
-      .mouseover(function () {
-      $(this).find("div").css("visibility", "visible");
-    })
-      .mouseout(function () {
-      $(this).find("div").css("visibility", "hidden");
-    });
+      .droppable({
+        hoverClass:'vertical',
+        tolerance:'pointer',
+        drop: scope.drop
+      })
   }}
 });
 
@@ -32,7 +37,6 @@ cbModule.directive('cbPicture', function ($compile) {
       '</div>' +
       '</li>',
     link: function(scope, element, attrs) {
-      scope.cbPicture().element = element;
       scope.selectedVisibility = function() {
         return (scope.cbPicture().selected | scope.cbPicture().over) ? "visible" : "hidden";
       };
@@ -40,63 +44,28 @@ cbModule.directive('cbPicture', function ($compile) {
         return scope.cbPicture().over ? "visible" : "hidden";
       };
 
-      var numSelected = function(pictures) {
-        var numSelected = 0; //$('<div/>');
-        for (var i=0; i < pictures.length; i++) {
-          if (pictures[i].selected) {
-            numSelected++; //.append($(pictures[i].element).clone());
-          }
+      scope.cbPicture().element = element;
+      var cloneWithNumber = function () {
+        scope.cbPicture().selected = true;
+        num = scope.pictures.getSelected(scope.pictures).length;
+        $(this).find(".picture-menu").css("visibility", "hidden");
+        var clone = $(this).clone()
+          .css("opacity", 0.5)
+          .css("position", "absolute");
+        var dragDiv = $("<div style='position: absolute;' />");
+        dragDiv.append(clone);
+        if (num > 1) {
+          dragDiv.append("<div class='drag-num'>"+num+"</div>");
         }
-        return numSelected;
+        return dragDiv; //.appendTo('ul.portfolio');
       }
 
       $(element)
-        .drag("start", function () {
-          scope.cbPicture().selected = true;
-          num = numSelected(scope.pictures);
-          var clone = $(this).clone()
-            .css("opacity", 0.5)
-            .css("position", "absolute")
-          var dragDiv = $("<div style='position: absolute;' />");
-          dragDiv.append(clone);
-          dragDiv.append("<div class='drag-num'>"+num+"</div>");
-          return dragDiv.appendTo('ul.portfolio');
-        })
-        .drag(function (ev, dd) {
-          $(dd.proxy).css({
-            top:dd.offsetY,
-            left:dd.offsetX
-          });
-        })
-        .drag("end", function (ev, dd) {
-          $(dd.proxy).remove();
-        });
-
+        .draggable({ helper: cloneWithNumber, opacity: 0.6, zIndex: 10 });
     }
   }
 });
 
 //http://jsfiddle.net/zdam/vGjXH/
-cbModule.factory('jqueryUI', function ($window, $templateCache, $document, $compile) {
-  return {
-    wrapper: function (cssSelector, pluginName, options, templateName, dialogScope) {
-      if (templateName) {
-        var templateDom = $($templateCache.get(templateName));
-        $document.append(templateDom);
-        $compile(templateDom)(dialogScope);
-      }
-      $(cssSelector)[pluginName](options);
-    },
-
-    performAction: function(cssSelector, pluginName, action, options) {
-      if(options){
-        $(cssSelector)[pluginName](action, options);
-      }else {
-        $(cssSelector)[pluginName](action);
-      }
-
-    }
-  };
-});
 
 

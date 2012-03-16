@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fedcaa56-51fe-4d8e-8910-efb27ed108c1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpecRunner.html" afterPath="$PROJECT_DIR$/SpecRunner.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/demos/angular.html" afterPath="$PROJECT_DIR$/app/demos/angular.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/demos/rearrange.html" afterPath="$PROJECT_DIR$/app/demos/rearrange.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/controllers.js" afterPath="$PROJECT_DIR$/app/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/services.js" afterPath="$PROJECT_DIR$/app/js/services.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/widgets.js" afterPath="$PROJECT_DIR$/app/js/widgets.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/jsTestDriver.conf" afterPath="$PROJECT_DIR$/config/jsTestDriver.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/widgetsSpec.jstd" afterPath="$PROJECT_DIR$/config/widgetsSpec.jstd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/controllersSpec.js" afterPath="$PROJECT_DIR$/test/unit/controllersSpec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/widgetsSpec.js" afterPath="$PROJECT_DIR$/test/unit/widgetsSpec.js" />
     </list>
     <ignored path="JQResearch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,49 +34,49 @@
     <favorites_list name="JQResearch" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42147437">
+    <splitter split-orientation="horizontal" split-proportion="0.4650273">
       <split-first>
         <leaf>
-          <file leaf-file-name="angular.html" pinned="true" current="true" current-in-tab="true">
+          <file leaf-file-name="controllers.js" pinned="true" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="46" column="0" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="widgets.js" pinned="true" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/js/widgets.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12" column="74" selection-start="447" selection-end="447" vertical-scroll-proportion="0.09869494">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/js/services.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="24" column="65" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jquery.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/lib/jquery/jquery.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3477" column="76" selection-start="95821" selection-end="95821" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="angular.html" pinned="true" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/demos/angular.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="67" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.33811477">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MyObject.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/MyObject.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Downloads/Javascript/AngularJS/angular-jquery-ui/app/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="29" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="jquery-ui-widgets.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Downloads/Javascript/AngularJS/angular-jquery-ui/app/js/jquery-ui-widgets.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="68" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="widgetsSpec.js" pinned="true" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/unit/widgetsSpec.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="65" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+                <state line="43" column="16" selection-start="2371" selection-end="2371" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -79,37 +86,46 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="widgets.js" pinned="true" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/js/widgets.js">
+          <file leaf-file-name="controllersSpec.js" pinned="true" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/unit/controllersSpec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="71" column="52" selection-start="2415" selection-end="2447" vertical-scroll-proportion="1.1891626">
+                <state line="14" column="38" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="picture.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/picture.js">
+          <file leaf-file-name="controllersSpec.jstd" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/controllersSpec.jstd">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="61" selection-start="1152" selection-end="1181" vertical-scroll-proportion="0.0">
+                <state line="4" column="42" selection-start="109" selection-end="123" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/js/services.js">
+          <file leaf-file-name="JasmineAdapter.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/lib/jasmine-jstd-adapter/JasmineAdapter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="0" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
+          <file leaf-file-name="JasmineAdapter.mhevery.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/lib/jasmine-jstd-adapter/JasmineAdapter.mhevery.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="78" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="widgetsSpec.js" pinned="true" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/unit/widgetsSpec.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="60" column="70" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -131,30 +147,60 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/unit/angWidgSpec.js" />
-        <option value="$PROJECT_DIR$/config/widgetsSpec.jstd" />
-        <option value="$PROJECT_DIR$/app/demos/widgetTest.html" />
-        <option value="$PROJECT_DIR$/app/demos/fiddle.html" />
-        <option value="$PROJECT_DIR$/SpecRunner.html" />
-        <option value="$PROJECT_DIR$/SpecRunner.widgets.html" />
         <option value="$PROJECT_DIR$/SpecRunner.MyObject.html" />
         <option value="$PROJECT_DIR$/SpecRunner.myState.html" />
         <option value="$PROJECT_DIR$/config/myStateSpec.jstd" />
         <option value="$PROJECT_DIR$/app/js/myState.js" />
         <option value="$PROJECT_DIR$/test/unit/myStateSpec.js" />
-        <option value="$PROJECT_DIR$/test/unit/widgetsSpec.js" />
+        <option value="$PROJECT_DIR$/app/demos/rearrange.html" />
+        <option value="$PROJECT_DIR$/app/demos/fiddle.html" />
+        <option value="$PROJECT_DIR$/SpecRunner.html" />
+        <option value="$PROJECT_DIR$/config/widgetsSpec.jstd" />
+        <option value="$PROJECT_DIR$/config/jsTestDriver.conf" />
         <option value="$PROJECT_DIR$/app/js/services.js" />
+        <option value="$PROJECT_DIR$/test/unit/widgetsSpec.js" />
         <option value="$PROJECT_DIR$/app/js/controllers.js" />
-        <option value="$PROJECT_DIR$/app/js/widgets.js" />
+        <option value="$PROJECT_DIR$/test/unit/controllersSpec.js" />
         <option value="$PROJECT_DIR$/app/demos/angular.html" />
+        <option value="$PROJECT_DIR$/app/js/widgets.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="x" value="945" />
+    <option name="width" value="1615" />
+    <option name="height" value="1400" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Code Quality ToolsJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Code Quality ToolsJavaScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -220,6 +266,136 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jasmine-jstd-adapter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JQResearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -255,7 +431,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="292" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -288,23 +464,7 @@
       <recent name="C:\Users\zen\RubymineProjects\JQResearch\test\lib\angular" />
     </key>
   </component>
-  <component name="RunManager" selected="JsTestDriver.widgetsSpec.jstd">
-    <configuration default="false" name="widgetsSpec.jstd" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver" temporary="true">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="$PROJECT_DIR$/config/widgetsSpec.jstd" />
-      <setting name="serverType" value="INTERNAL" />
-      <RunnerSettings RunnerId="JsTestDriverClientRunner" />
-      <ConfigurationWrapper RunnerId="JsTestDriverClientRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="jsTestDriver.conf" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver" temporary="true">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="$PROJECT_DIR$/config/jsTestDriver.conf" />
-      <setting name="serverType" value="INTERNAL" />
-      <RunnerSettings RunnerId="JsTestDriverClientRunner" />
-      <ConfigurationWrapper RunnerId="JsTestDriverClientRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.angular.html">
     <configuration default="false" name="widgetsSpec.js" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver" temporary="true">
       <setting name="configLocationType" value="JS_FILE" />
       <setting name="configType" value="GENERATED" />
@@ -320,6 +480,32 @@
       <setting name="serverType" value="INTERNAL" />
       <RunnerSettings RunnerId="JsTestDriverClientRunner" />
       <ConfigurationWrapper RunnerId="JsTestDriverClientRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SpecRunner.html" type="JavascriptDebugSession" factoryName="Local" temporary="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/SpecRunner.html" />
+      </JSDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="controllersSpec.jstd" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver" temporary="true">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="$PROJECT_DIR$/config/controllersSpec.jstd" />
+      <setting name="serverType" value="INTERNAL" />
+      <RunnerSettings RunnerId="JsTestDriverClientRunner" />
+      <ConfigurationWrapper RunnerId="JsTestDriverClientRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="angular.html" type="JavascriptDebugSession" factoryName="Local" temporary="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/app/demos/angular.html" />
+      </JSDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -385,34 +571,36 @@
         <option name="RakeTask" enabled="false" />
       </method>
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JsTestDriver.widgetsSpec.jstd" />
-      <item index="1" class="java.lang.String" itemvalue="JsTestDriver.jsTestDriver.conf" />
-      <item index="2" class="java.lang.String" itemvalue="JsTestDriver.widgetsSpec.js" />
-      <item index="3" class="java.lang.String" itemvalue="JsTestDriver.myStateSpec.jstd" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JsTestDriver.widgetsSpec.js" />
+      <item index="1" class="java.lang.String" itemvalue="JsTestDriver.myStateSpec.jstd" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.SpecRunner.html" />
+      <item index="3" class="java.lang.String" itemvalue="JsTestDriver.controllersSpec.jstd" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.angular.html" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="945" y="0" width="1615" height="1400" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13724089" sideWeight="0.73846155" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13926499" sideWeight="0.73496836" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39177656" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26552054" sideWeight="0.49753696" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3515625" sideWeight="0.4981527" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20384616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26503164" sideWeight="0.5074013" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26503164" sideWeight="0.7488954" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26503164" sideWeight="0.24594992" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20384616" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -423,8 +611,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -453,7 +641,7 @@
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using threedubmedia drag &amp; drop api" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -466,93 +654,126 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Using threedubmedia drag &amp; drop api" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/unit/controllersSpec.js</url>
+          <line>44</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/js/controllers.js</url>
+          <line>46</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/js/controllers.js</url>
+          <line>35</line>
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint suspend="NONE" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/widgetsSpec.jstd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="46" selection-start="306" selection-end="306" vertical-scroll-proportion="0.41526717" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/myStateSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="65" selection-end="99" vertical-scroll-proportion="0.10585305" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/demos/drag3dub.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="34" selection-start="3278" selection-end="3278" vertical-scroll-proportion="1.4488636" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/jquery.event.drag-2.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/directives.js">
+    <entry file="file://$PROJECT_DIR$/test/unit/angWidgSpec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2011" column="24" selection-start="60512" selection-end="60512" vertical-scroll-proportion="0.016966067" />
+        <state line="4304" column="12" selection-start="135304" selection-end="135304" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/myState.js">
+    <entry file="file://$PROJECT_DIR$/test/spec/pictureSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="99" selection-end="99" vertical-scroll-proportion="0.08374384" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/MyObject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Javascript/AngularJS/angular-jquery-ui/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Javascript/AngularJS/angular-jquery-ui/app/js/jquery-ui-widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="68" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/widgetsSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="65" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="52" selection-start="2415" selection-end="2447" vertical-scroll-proportion="1.1891626">
+        <state line="0" column="0" selection-start="0" selection-end="123" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/picture.js">
+    <entry file="file://$PROJECT_DIR$/config/widgetsSpec.jstd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="61" selection-start="1152" selection-end="1181" vertical-scroll-proportion="0.0" />
+        <state line="6" column="13" selection-start="157" selection-end="201" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/services.js">
+    <entry file="file://$PROJECT_DIR$/config/jsTestDriver.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0" />
+        <state line="17" column="64" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpecRunner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="39" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.47650453">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="78" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" />
+        <state line="46" column="0" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/widgets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="74" selection-start="447" selection-end="447" vertical-scroll-proportion="0.09869494">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="65" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3477" column="76" selection-start="95821" selection-end="95821" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/demos/angular.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="67" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.33811477">
+        <state line="43" column="16" selection-start="2371" selection-end="2371" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/controllersSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="38" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/controllersSpec.jstd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="109" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lib/jasmine-jstd-adapter/JasmineAdapter.mhevery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/widgetsSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="70" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lib/jasmine-jstd-adapter/JasmineAdapter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
   </component>
