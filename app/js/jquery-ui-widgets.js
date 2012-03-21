@@ -18,6 +18,7 @@
         link:function (scope, item, attrs) {
           var dragStartExp = attrs.jquiDragStart || '';
           var dragEndExp = attrs.jquiDragEnd || '';
+          var helperExp = attrs.jquiHelper || '';
           var handle = attrs.jquiHandle || false;
           var axisExp = attrs.jquiAxis;
 
@@ -25,12 +26,14 @@
 
           var dragStart = evalFn(item, scope, dragStartExp);
           var dragEnd = evalFn(item, scope, dragEndExp);
+          var helper = evalFn(item, scope, helperExp);
           var token;
 
           item.draggable({
             tolerance:'pointer',
             addClass:false,
-            handle:handle,
+            handle: handle,
+            helper: helper,
             start:function (event, ui) {
               item.draggable('option', 'revertDuration', 200);
               item.addClass('jqui-dnd-item-dragging');

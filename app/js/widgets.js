@@ -1,28 +1,5 @@
-cbModule.directive('cbPicture', function ($compile) {
-//  compileElement.css('display', 'block');
-  return {replace:true,
-    transclude:true,
-    scope:{
-      cbPicture:'accessor',
-      position: 'evaluate',
-      pictures: 'evaluate'
-    },
-    template:'<li>' +
-      '<img src="{{cbPicture().url}}" alt="{{cbPicture().name}}">' +
-      '<span>{{position}}</span>' +
-      '<div class="selected" style="visibility: {{selectedVisibility()}};"></div>' +
-      '<div class="picture-menu" style="visibility: {{picMenuVisibility()}};">' +
-      '<img src="../img/settings.gif" alt="?">' +
-      '<img src="../img/delete.gif" alt="x">' +
-      '</div>' +
-      '</li>',
-    link: function(scope, element, attrs) {
-      scope.selectedVisibility = function() {
-        return (scope.cbPicture().selected | scope.cbPicture().over) ? "visible" : "hidden";
-      };
-      scope.picMenuVisibility = function() {
-        return scope.cbPicture().over ? "visible" : "hidden";
-      };
+
+    var link = function(scope, element, attrs) {
 
       scope.cbPicture().element = element;
       var cloneWithNumber = function () {
@@ -43,8 +20,7 @@ cbModule.directive('cbPicture', function ($compile) {
       $(element)
         .draggable({ helper: cloneWithNumber, opacity: 0.6, zIndex: 10 });
     }
-  }
-});
+
 
 //http://jsfiddle.net/zdam/vGjXH/
 

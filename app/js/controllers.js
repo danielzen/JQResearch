@@ -9,7 +9,7 @@ var Picture = _class({
   }
 });
 
-function PicturePortfolioCtrl($scope) {
+function PicturePortfolioCtrl($scope, $templateCache, $compile, $document) {
   $scope.pictures = [
     new Picture("../img/Chrysanthemum.jpg","Chrysanthemum"),
     new Picture("../img/Desert.jpg","Desert"),
@@ -31,11 +31,26 @@ function PicturePortfolioCtrl($scope) {
   };
 
   $scope.selectedVisibility = function(pic) {
-    return "visibilitly: " + (pic.selected | pic.over) ? "visible" : "hidden";
+    return "visibility: " + ((pic.selected | pic.over) ? "visible" : "hidden");
   };
 
   $scope.picMenuVisibility = function(pic) {
-    return "visibilitly: " + pic.over ? "visible" : "hidden";
+    return "visibility: " + (pic.over ? "visible" : "hidden");
+  };
+
+  $scope.dragStart= function (pic) {
+    console.log("dragStart");
+    return pic;
+  };
+
+  $scope.helper = function(pic) {
+    var helperElement = $($templateCache.get('helper-template'));
+    helperScope = $scope.$new();
+    helperScope.pic = pic;
+    $compile(helperElement)(helperScope);
+    helperElement.find("img").css("opacity", 0.5);
+    var dragDiv = $("<li><div style='position: relative;' /></li>");
+    return dragDiv.append(helperElement);
   };
 
   $scope.sortPictures = function (newIndex) {
