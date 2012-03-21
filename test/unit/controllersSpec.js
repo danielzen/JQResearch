@@ -35,20 +35,31 @@ describe('PicturePortfolioCtrl', function () {
   }
 
   describe('sortPictures', function () {
+
+    var expectPicturesToBeInNewOrder = function (pictures, newOrder) {
+      expect(scope.pictures.length).toBe(pictures.length);
+      for (var i = 0; i < newOrder.length; i++) {
+        var position = newOrder[i];
+        expect(scope.pictures[i].selected).toBe(false);
+        expect(scope.pictures[i].name).toBe(pictures[position].name);
+      }
+    };
+
     it('should have the same length and should sort the pics', function () {
-      var oldPics = cloneArray(pictures);
-      var selectedPics = [pictures[1],pictures[2],pictures[3]];
+      pictures[1].selected = true;
+      pictures[2].selected = true;
+      pictures[3].selected = true;
       var newIndex = 5;
-      var sortedPictures = pictures.sortPictures(selectedPics, newIndex);
-      expect(pictures.length) .toBe(oldPics.length);
-      expect(pictures[0].name).toBe(oldPics[0].name);
-      expect(pictures[1].name).toBe(oldPics[4].name);
-      expect(pictures[2].name).toBe(oldPics[1].name);
-      expect(pictures[3].name).toBe(oldPics[2].name);
-      expect(pictures[4].name).toBe(oldPics[3].name);
-      expect(pictures[5].name).toBe(oldPics[5].name);
-      expect(pictures[6].name).toBe(oldPics[6].name);
-      expect(pictures[7].name).toBe(oldPics[7].name);
+      var sortedPictures = scope.sortPictures(newIndex);
+      expectPicturesToBeInNewOrder(pictures, [0,4,1,2,3,5,6,7]);
+    });
+
+    it('should be able to have a newIndex == array.length', function () {
+      pictures[0].selected = true;
+      pictures[6].selected = true;
+      var newIndex = pictures.length;
+      var sortedPictures = scope.sortPictures(newIndex);
+      expectPicturesToBeInNewOrder(pictures, [1,2,3,4,5,7,0,6]);
     });
   });
 

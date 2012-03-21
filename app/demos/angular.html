@@ -21,7 +21,8 @@
     .portfolio div.picture-menu {visibility: hidden; position: absolute; right: 0; top: 0;}
     .portfolio div.picture-menu img {position: relative;}
     .portfolio div.drag-num {text-align: center; border-radius: 15px; font-weight: bolder;
-      padding: 6px; left: 45px; top: 30px; z-index: 2; position: absolute; background: #d0056b;}
+      padding: 6px; left: 45px; top: 30px; position: absolute; background: #d0056b;}
+    .portfolio div.drag { z-index: 2; }
   </style>
   <script src="../lib/jquery/jquery.js"></script>
   <script src="../lib/angular/angular.js"></script>
@@ -40,9 +41,8 @@
 <ul class="portfolio" ng-controller="PicturePortfolioCtrl">
   <li class="between" jqui-drop-commit="sortPictures(0)"><div></div></li>
   <span ng-repeat="pic in pictures" >
-    <span ng-mouseover="pic.over=true" ng-mouseout="pic.over=false" ng-click="select(pic)"
-          jqui-drag-start="dragStart(pic)" jqui-helper="helper(pic)">
-      <li class="pic">
+    <span ng-mouseenter="pic.over=true" ng-mouseleave="pic.over=false" ng-click="pic.selected=!pic.selected">
+      <li class="pic" jqui-drag-start="dragStart(pic)" jqui-helper="helper(pic)">
         <img src="{{pic.url}}" alt="{{pic.name}}">
         <span>{{$index+1}}</span>
         <div class="selected" style="{{selectedVisibility(pic)}};"></div>
@@ -51,12 +51,15 @@
         </div>
       </li>
     </span>
-    <li class="between" jqui-drop-commit="sortPictures({{$index+1}})"><div></div></li>
+    <li class="between" jqui-drop-commit="sortPictures($index+1)"><div></div></li>
   </span>
 
   <script type="text/ng-template" id="helper-template">
+    <div class="drag">
+      <div class="selected" style="visibility: visible;"></div>
       <img src="{{pic.url}}" alt="{{pic.name}}">
-      <div class='drag-num'>{{getSelected().length}}</div>
+      <div class='drag-num' ng-show="getSelected().length >= 1">{{getSelected().length}}</div>
+    </div>
   </script>
 
 </ul>
@@ -65,9 +68,3 @@
 </body>
 </html>
 
-<!--onmouseover="showPictureMenu(this);fadePicture(this);"-->
-<!--onmouseout="hidePictureMenu(this);darkenPicture(this);if (!this.selected) hideSelected(this);"-->
-
-<!--<img src='{{pic.url}}' alt='{{pic.name}}'><span>{{$index + 1}}</span>-->
-<!--<div class='selected'></div>-->
-<!--<div class='picture-menu'><img src='../img/settings.gif' alt='?'><img src='../img/delete.gif' alt='x'></div>-->

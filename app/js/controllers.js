@@ -9,7 +9,7 @@ var Picture = _class({
   }
 });
 
-function PicturePortfolioCtrl($scope, $templateCache, $compile, $document) {
+function PicturePortfolioCtrl($scope, $templateCache, $compile) {
   $scope.pictures = [
     new Picture("../img/Chrysanthemum.jpg","Chrysanthemum"),
     new Picture("../img/Desert.jpg","Desert"),
@@ -44,31 +44,34 @@ function PicturePortfolioCtrl($scope, $templateCache, $compile, $document) {
   };
 
   $scope.helper = function(pic) {
+    pic.selected = true;
+    pic.over = false;
     var helperElement = $($templateCache.get('helper-template'));
-    helperScope = $scope.$new();
+    var helperScope = $scope.$new();
     helperScope.pic = pic;
     $compile(helperElement)(helperScope);
-    helperElement.find("img").css("opacity", 0.5);
-    var dragDiv = $("<li><div style='position: relative;' /></li>");
-    return dragDiv.append(helperElement);
+    helperElement.find("img").css("opacity", 0.6);
+    helperElement.find(".selected").css("opacity", 0.6);
+    return helperElement;
   };
 
   $scope.sortPictures = function (newIndex) {
     var selectedPics = $scope.getSelected();
     var pictures = $scope.pictures;
     var orderedPics = new Array();
-    for (var i = 0; i < pictures.length; i++) {
+    for (var i = 0; i < pictures.length+1; i++) {
       if (i == newIndex) {
         for (var j = 0; j < selectedPics.length; j++) {
           orderedPics.push(selectedPics[j]);
         }
       }
-      if (!$scope.isSelected(pictures[i], selectedPics)) {
+      if (i<pictures.length && !$scope.isSelected(pictures[i], selectedPics)) {
         orderedPics.push(pictures[i]);
       }
     }
-    for (var i = 0; i < pictures.length; i++) {
-      pictures[i]=orderedPics[i];
+    $scope.pictures = orderedPics;
+    for (var i = 0; i < selectedPics.length; i++) {
+      selectedPics[i].selected = false;
     }
   };
 
@@ -82,12 +85,5 @@ function PicturePortfolioCtrl($scope, $templateCache, $compile, $document) {
     }
     return selected;
   };
-
-  $scope.select = function (pic) {
-    pic.selected=!pic.selected;
-  };
-
-  selected = new Object();
-//  $scope.picture=$scope.pictures[0];
 
 }

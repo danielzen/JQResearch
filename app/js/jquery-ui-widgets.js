@@ -18,7 +18,7 @@
         link:function (scope, item, attrs) {
           var dragStartExp = attrs.jquiDragStart || '';
           var dragEndExp = attrs.jquiDragEnd || '';
-          var helperExp = attrs.jquiHelper || '';
+          var helperExp = attrs.jquiHelper || 'original';
           var handle = attrs.jquiHandle || false;
           var axisExp = attrs.jquiAxis;
 
@@ -26,11 +26,13 @@
 
           var dragStart = evalFn(item, scope, dragStartExp);
           var dragEnd = evalFn(item, scope, dragEndExp);
-          var helper = evalFn(item, scope, helperExp);
+          var helper = helperExp;
+          if (!(helper == 'original' || helper == 'clone')) {
+            helper = evalFn(item, scope, helperExp);
+          }
           var token;
 
           item.draggable({
-            tolerance:'pointer',
             addClass:false,
             handle: handle,
             helper: helper,
@@ -63,7 +65,7 @@
     .directive('jquiDropCommit', function ($compile) {
       return {
         link:function (scope, target, attrs) {
-          var acceptExp = attrs.jquiDropAccept || '';
+          var acceptExp = attrs.jquiDropAccept || 'true';
           var commitExp = attrs.jquiDropCommit || '';
 
           target.addClass('jqui-dnd-target');
@@ -72,6 +74,7 @@
 
           target.droppable({
             addClass:false,
+            tolerance:'pointer',
             activate:function (event, ui) {
               var token = ui.draggable.data('jqui-dnd-item-token');
               if (accept(token)) {
