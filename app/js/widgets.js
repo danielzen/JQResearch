@@ -1,23 +1,3 @@
-cbModule.directive('cbBetween', function ($compile) {
-  return {
-    replace:true,
-    transclude:true,
-    template: '<li class="between"><div></div></li>',
-  link: function(scope, element, attrs){
-    var newIndex = (typeof scope.$index === "undefined") ? 0 : scope.$index+1 ;
-    scope.drop = function () {
-      scope.pictures.sortPictures(scope.pictures.getSelected(), newIndex);
-      scope.$apply();
-    };
-    $(element)
-      .droppable({
-        hoverClass:'vertical',
-        tolerance:'pointer',
-        drop: scope.drop
-      })
-  }}
-});
-
 cbModule.directive('cbPicture', function ($compile) {
 //  compileElement.css('display', 'block');
   return {replace:true,

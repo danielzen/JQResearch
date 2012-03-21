@@ -11,7 +11,8 @@ describe('cb-picture', function () {
   });
 
   function createScopePutPicInRootCompile(pic, $rootScope, $compile) {
-    var directiveScope = $rootScope.$new();
+    var isolate = true;
+    var directiveScope = $rootScope.$new(isolate);
     $rootScope.pic = pic;
     element = $compile('<li cb-picture="pic" position="4"></li>')(directiveScope);
     directiveScope.$apply();

@@ -11,7 +11,8 @@
 
     .portfolio li.between  {position: relative; float: left; width: 10px; }
     .portfolio li.between div {height: 81px; width: 3px; margin: 0px auto; margin-top: 6px; padding: 0; border: 0;}
-    .portfolio li.vertical div {background: #d0056b;}
+    /*.portfolio li.vertical div {background: #d0056b;}*/
+    .portfolio li.jqui-dnd-target-over div {background: #d0056b;}
 
     .portfolio li span { position: absolute; bottom: 2px; right:4px; z-index: 1; color: #f5f5f5;}
     .portfolio li img {position: absolute; top: 0; left: 0; z-index: 0; }
@@ -41,12 +42,22 @@
 </div>
 <div ng-app="clickbooq">
 <ul class="portfolio" ng-controller="PicturePortfolioCtrl">
-  <li cb-between></li>
+  <li class="between" jqui-drop-commit="sortPictures(0)"><div></div></li>
   <span ng-repeat="pic in pictures" >
     <span ng-mouseover="pic.over=true" ng-mouseout="pic.over=false" ng-click="select(pic)">
-      <li cb-picture='pic' pictures='pictures' position="$index+1" class='pic'></li>
+      <li>
+        <img src="{{pic.url}}" alt="{{pic.name}}">
+        <span>{{$index+1}}</span>
+        <!--<div class="selected" style="{{selectedVisibility(pic)}};"></div>-->
+        <div class="selected"></div>
+        <!--<div class="picture-menu" style="{{picMenuVisibility(pic)}};">-->
+        <div class="picture-menu">
+          <img src="../img/settings.gif" alt="?">
+          <img src="../img/delete.gif" alt="x">
+        </div>
+      </li>
     </span>
-    <li cb-between></li>
+    <li class="between" jqui-drop-commit="sortPictures({{$index+1}})"><div></div></li>
   </span>
 </ul>
 </div>

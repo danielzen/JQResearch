@@ -30,7 +30,16 @@ function PicturePortfolioCtrl($scope) {
     return false;
   };
 
-  $scope.pictures.sortPictures = function (selectedPics, newIndex) {
+  $scope.selectedVisibility = function(pic) {
+    return "visibilitly: " + (pic.selected | pic.over) ? "visible" : "hidden";
+  };
+
+  $scope.picMenuVisibility = function(pic) {
+    return "visibilitly: " + pic.over ? "visible" : "hidden";
+  };
+
+  $scope.sortPictures = function (newIndex) {
+    var selectedPics = $scope.getSelected();
     var pictures = $scope.pictures;
     var orderedPics = new Array();
     for (var i = 0; i < pictures.length; i++) {
@@ -48,7 +57,7 @@ function PicturePortfolioCtrl($scope) {
     }
   };
 
-  $scope.pictures.getSelected = function() {
+  $scope.getSelected = function() {
     var pictures = $scope.pictures;
     var selected = new Array(); //$('<div/>');
     for (var i=0; i < pictures.length; i++) {
