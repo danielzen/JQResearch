@@ -39,7 +39,6 @@ function PicturePortfolioCtrl($scope, $templateCache, $compile) {
   };
 
   $scope.dragStart= function (pic) {
-    console.log("dragStart");
     return pic;
   };
 
