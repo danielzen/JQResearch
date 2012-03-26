@@ -4,7 +4,7 @@ describe('directives', function(){
   var scope, element;
 
   beforeEach(function(){
-    module('jquiModule');
+    module('jqui');
 
     this.addMatchers({
       toHaveClass: function(className) {

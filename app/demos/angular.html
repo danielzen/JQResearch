@@ -37,13 +37,13 @@
 <div id="title">
     <span> > </span> <strong>Fashion Portraits (12)</strong>
 </div>
-<div ng-app="jquiModule">
+<div ng-app="jqui">
 <ul class="portfolio" ng-controller="PicturePortfolioCtrl">
   <li class="between" jqui-drop-commit="sortPictures(0)"><div></div></li>
   <span ng-repeat="pic in pictures" >
     <span ng-mouseenter="pic.over=true" ng-mouseleave="pic.over=false" ng-click="pic.selected=!pic.selected">
       <li class="pic" jqui-drag-start="dragStart(pic)" jqui-helper="helper(pic)">
-        <img src="{{pic.url}}" alt="{{pic.name}}">
+        <img ng-src="{{pic.url}}" alt="{{pic.name}}">
         <span>{{$index+1}}</span>
         <div class="selected" style="{{selectedVisibility(pic)}};"></div>
         <div class="picture-menu" style="{{picMenuVisibility(pic)}};">
@@ -57,7 +57,7 @@
   <script type="text/ng-template" id="helper-template">
     <div class="drag">
       <div class="selected" style="visibility: visible;"></div>
-      <img src="{{pic.url}}" alt="{{pic.name}}">
+      <img ng-src="{{pic.url}}" alt="{{pic.name}}">
       <div class='drag-num' ng-show="getSelected().length > 1">{{getSelected().length}}</div>
     </div>
   </script>

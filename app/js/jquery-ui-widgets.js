@@ -12,7 +12,7 @@
     };
   }
 
-  angular.module("jquiModule", [])
+  angular.module("jqui", [])
     .directive('jquiDragStart', function ($compile) {
       return {
         link:function (scope, item, attrs) {

@@ -11,7 +11,11 @@ describe("MyObject", function () {
     it("adds states", function () {
         obj.addState("packaged");
         expect(obj.getState()).toEqual(["clean", "packaged"]);
-    })
+    });
+    it("should be instanceof MyObject", function () {
+        expect(obj instanceof MyObject).toBeTruthy();
+    });
+
 });
 
 describe("test", function () {

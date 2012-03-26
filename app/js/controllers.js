@@ -1,13 +1,9 @@
-var Picture = _class({
-//  constructor:this,
-  init:function (url, name) {
-    this.url = url;
-    this.name = name;
-    this.selected = false;
-    this.over = false;
-    return this;
-  }
-});
+var Picture = function(url, name) {
+  this.url = url;
+  this.name = name;
+  this.selected = false;
+  this.over = false;
+};
 
 function PicturePortfolioCtrl($scope, $templateCache, $compile) {
   $scope.pictures = [

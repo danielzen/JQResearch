@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fedcaa56-51fe-4d8e-8910-efb27ed108c1" name="Default" comment="helper first draft">
+    <list default="true" id="fedcaa56-51fe-4d8e-8910-efb27ed108c1" name="Default" comment="working version with jqui module">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/demos/angular.html" afterPath="$PROJECT_DIR$/app/demos/angular.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/controllers.js" afterPath="$PROJECT_DIR$/app/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/jquery-ui-widgets.js" afterPath="$PROJECT_DIR$/app/js/jquery-ui-widgets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/widgets.js" afterPath="$PROJECT_DIR$/app/js/widgets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/controllersSpec.js" afterPath="$PROJECT_DIR$/test/unit/controllersSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/widgetsSpec.js" afterPath="$PROJECT_DIR$/test/unit/widgetsSpec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/MyObject.js" afterPath="$PROJECT_DIR$/app/src/MyObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/MyObjectSpec.js" afterPath="$PROJECT_DIR$/test/spec/MyObjectSpec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/jquery-ui-widgetsSpec.js" afterPath="$PROJECT_DIR$/test/unit/jquery-ui-widgetsSpec.js" />
     </list>
     <ignored path="JQResearch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +29,7 @@
     <favorites_list name="JQResearch" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49216524">
+    <splitter split-orientation="horizontal" split-proportion="0.5067039">
       <split-first>
         <leaf>
           <file leaf-file-name="widgets.js" pinned="true" current="false" current-in-tab="false">
@@ -41,19 +41,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="66" selection-start="1849" selection-end="1849" vertical-scroll-proportion="1.1730769">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="scrap.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scrap.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -62,25 +53,25 @@
           <file leaf-file-name="myState.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/js/myState.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="9" column="40" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="angular.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/demos/angular.html">
+          <file leaf-file-name="controllers.js" pinned="true" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="63" column="66" selection-start="3199" selection-end="3199" vertical-scroll-proportion="-37.653847">
+                <state line="39" column="69" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.7334071">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/js/services.js">
+          <file leaf-file-name="MyObjectSpec.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/spec/MyObjectSpec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="65" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
+                <state line="15" column="84" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -99,19 +90,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="controllersSpec.js" pinned="true" current="false" current-in-tab="true">
+          <file leaf-file-name="controllersSpec.js" pinned="true" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/unit/controllersSpec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="36" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.36061946">
+                <state line="8" column="30" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="widgetsSpec.js" pinned="true" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/unit/widgetsSpec.js">
+          <file leaf-file-name="angular.html" pinned="true" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/demos/angular.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="45" column="16" selection-start="2446" selection-end="2449" vertical-scroll-proportion="0.49467456">
                   <folding />
                 </state>
               </provider>
@@ -120,10 +111,37 @@
           <file leaf-file-name="jquery-ui-widgets.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/js/jquery-ui-widgets.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="39" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
+                <state line="14" column="22" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jquery-ui-widgetsSpec.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/unit/jquery-ui-widgetsSpec.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="61" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MyObject.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/MyObject.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="38" column="3" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SpecRunner.MyObject.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SpecRunner.MyObject.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="70" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -144,28 +162,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/myStateSpec.jstd" />
-        <option value="$PROJECT_DIR$/app/js/myState.js" />
-        <option value="$PROJECT_DIR$/test/unit/myStateSpec.js" />
-        <option value="$PROJECT_DIR$/app/demos/rearrange.html" />
-        <option value="$PROJECT_DIR$/app/demos/fiddle.html" />
         <option value="$PROJECT_DIR$/SpecRunner.html" />
         <option value="$PROJECT_DIR$/config/widgetsSpec.jstd" />
         <option value="$PROJECT_DIR$/config/jsTestDriver.conf" />
         <option value="$PROJECT_DIR$/app/js/services.js" />
         <option value="$PROJECT_DIR$/scrap.html" />
-        <option value="$PROJECT_DIR$/app/js/jquery-ui-widgets.js" />
-        <option value="$PROJECT_DIR$/app/demos/angular.html" />
         <option value="$PROJECT_DIR$/app/js/widgets.js" />
         <option value="$PROJECT_DIR$/test/unit/widgetsSpec.js" />
         <option value="$PROJECT_DIR$/test/unit/controllersSpec.js" />
+        <option value="$PROJECT_DIR$/app/css/style.css" />
+        <option value="$PROJECT_DIR$/app/pages.html" />
+        <option value="$PROJECT_DIR$/app/src/MyObject.js" />
+        <option value="$PROJECT_DIR$/test/spec/MyObjectSpec.js" />
+        <option value="$PROJECT_DIR$/app/demos/angular.html" />
+        <option value="$PROJECT_DIR$/app/js/jquery-ui-widgets.js" />
+        <option value="$PROJECT_DIR$/test/unit/jquery-ui-widgetsSpec.js" />
         <option value="$PROJECT_DIR$/app/js/controllers.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="706" />
-    <option name="width" value="1854" />
+    <option name="x" value="951" />
+    <option name="width" value="1609" />
     <option name="height" value="1400" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -213,7 +231,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -224,135 +242,48 @@
       <autoscrollFromSource ProjectPane="true" />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JQResearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="278" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="296" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="292" />
-    <property name="options.lastSelected" value="preferences.keymap" />
-    <property name="recentsLimit" value="5" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="297" />
-    <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="967" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="291" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PublishConfig">
+  <component name="PublishConfig" serverName="zendigital.com/clickbooq" serverId="6dc62c28-301a-4429-a4d3-682a5a5cfd89">
     <servers>
+      <server id="31bcb485-5cf2-4b89-893b-8521ed4c0642">
+        <serverdata />
+      </server>
       <server id="6dc62c28-301a-4429-a4d3-682a5a5cfd89">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" />
+            <mapping deploy="/clickbooq" local="$PROJECT_DIR$/app" web="/clickbooq" />
           </mappings>
         </serverdata>
       </server>
@@ -364,14 +295,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JsTestDriver.jsTestDriver.conf">
-    <configuration default="false" name="myStateSpec.jstd" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver" temporary="true">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="$PROJECT_DIR$/config/myStateSpec.jstd" />
-      <setting name="serverType" value="INTERNAL" />
-      <RunnerSettings RunnerId="JsTestDriverClientRunner" />
-      <ConfigurationWrapper RunnerId="JsTestDriverClientRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="SpecRunner.html" type="JavascriptDebugSession" factoryName="Local" temporary="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -404,6 +327,15 @@
       <setting name="serverType" value="INTERNAL" />
       <RunnerSettings RunnerId="JsTestDriverClientRunner" />
       <ConfigurationWrapper RunnerId="JsTestDriverClientRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SpecRunner.MyObject.html" type="JavascriptDebugSession" factoryName="Local" temporary="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/SpecRunner.MyObject.html" />
+      </JSDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -460,6 +392,15 @@
         <option name="RakeTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -470,35 +411,36 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JsTestDriver.myStateSpec.jstd" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.SpecRunner.html" />
-      <item index="2" class="java.lang.String" itemvalue="JsTestDriver.controllersSpec.jstd" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.angular.html" />
-      <item index="4" class="java.lang.String" itemvalue="JsTestDriver.jsTestDriver.conf" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.SpecRunner.html" />
+      <item index="1" class="java.lang.String" itemvalue="JsTestDriver.controllersSpec.jstd" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.angular.html" />
+      <item index="3" class="java.lang.String" itemvalue="JsTestDriver.jsTestDriver.conf" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.SpecRunner.MyObject.html" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="706" y="0" width="1854" height="1400" extended-state="0" />
-    <editor active="false" />
+    <frame x="951" y="0" width="1609" height="1400" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39177656" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26503164" sideWeight="0.5074013" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20384616" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13854748" sideWeight="0.73496836" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26503164" sideWeight="0.7488954" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294956" sideWeight="0.6700949" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20010965" sideWeight="0.6700949" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39161393" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26503164" sideWeight="0.5074013" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26503164" sideWeight="0.7488954" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26503164" sideWeight="0.24594992" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20384616" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32990506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -539,7 +481,7 @@
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="helper first draft" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed minor bug in angular DnD demo..." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -555,6 +497,8 @@
     <MESSAGE value="Using threedubmedia drag &amp; drop api" />
     <MESSAGE value="Drag &amp; drop not testable :(" />
     <MESSAGE value="helper first draft" />
+    <MESSAGE value="working version with jqui module" />
+    <MESSAGE value="fixed minor bug in angular DnD demo..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -566,36 +510,41 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/controllersSpec.jstd">
+    <entry file="file://$PROJECT_DIR$/app/lib/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="109" selection-end="123" vertical-scroll-proportion="0.0" />
+        <state line="1146" column="49" selection-start="33094" selection-end="33094" vertical-scroll-proportion="0.1773522" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/lib/jasmine-jstd-adapter/JasmineAdapter.js">
+    <entry file="file://$PROJECT_DIR$/app/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0" />
+        <state line="0" column="46" selection-start="15" selection-end="46" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/lib/jasmine-jstd-adapter/JasmineAdapter.mhevery.js">
+    <entry file="file://$PROJECT_DIR$/app/lib/angular/version.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/filtersSpec.js">
+    <entry file="file://$PROJECT_DIR$/test/unit/widgetsSpec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/services.js">
+    <entry file="file://$PROJECT_DIR$/app/js/myState.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="65" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" />
+        <state line="9" column="40" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/MyObjectSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="84" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/jquery/jquery.js">
@@ -603,58 +552,56 @@
         <state line="3477" column="76" selection-start="95821" selection-end="95821" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/myState.js">
+    <entry file="file://$PROJECT_DIR$/SpecRunner.MyObject.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="20" column="70" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/angular/angular.js">
+    <entry file="file://$PROJECT_DIR$/app/src/MyObject.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1146" column="49" selection-start="33094" selection-end="33094" vertical-scroll-proportion="0.1773522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/demos/angular.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="66" selection-start="3199" selection-end="3199" vertical-scroll-proportion="-37.653847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/jquery-ui-widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="39" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/widgetsSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="38" column="3" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/controllersSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="36" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.36061946">
+        <state line="8" column="30" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/widgets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/jquery-ui-widgets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/jquery-ui-widgetsSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="61" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/demos/angular.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="16" selection-start="2446" selection-end="2449" vertical-scroll-proportion="0.49467456">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="66" selection-start="1849" selection-end="1849" vertical-scroll-proportion="1.1730769">
+        <state line="39" column="69" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.7334071">
           <folding />
         </state>
       </provider>

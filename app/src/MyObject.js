@@ -5,6 +5,7 @@
 var _class = function (cls) {
   var classObj = function () {
     var args = arguments.length > 0 ? "arguments[0]" : "";
+    console.log("testing: "+ this.global);
     for (var i = 1; i < arguments.length; i++) {
       args += ", arguments[" + i + "]";
     }
